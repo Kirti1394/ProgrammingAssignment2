@@ -2,6 +2,9 @@
 ## functions do
 
 ## Write a short comment describing this function
+## This assignment demonstrates how to cache the results of 
+## time consuming computations using scoping rules of the R
+## language. 
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -15,8 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
 
-
-## Write a short comment describing this function
+## Return a matrix that is the inverse of x, using the caching 
+## methods defined in the function just above, makeCacheMatrix. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
